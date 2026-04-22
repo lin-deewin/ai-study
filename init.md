@@ -1,4 +1,4 @@
-1. 安装python
+1. 安装python， node.js
 2. 安装SDK
 ```ps1
 (New-Object Net.WebClient).DownloadFile("https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe", "$env:Temp\GoogleCloudSDKInstaller.exe")
@@ -8,6 +8,7 @@
 3. 设置网络代理
 ```shell
 gcloud components update
+npm install -g @google/generative-ai
 gcloud config unset auth/disable_ssl_validation  
 ```
 vpn改为美国，并全局代理
