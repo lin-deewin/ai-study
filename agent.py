@@ -1,4 +1,3 @@
-```python
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_tool_calling_agent, AgentExecutor
