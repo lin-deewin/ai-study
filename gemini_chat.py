@@ -1,10 +1,13 @@
 import os
 import google.generativeai as genai
+from dotenv import load_dotenv
+
+load_dotenv()
 os.environ['HTTP_PROXY'] = 'http://127.0.0.1:7890'
 os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:7890'
 # --- 配置区 ---
 # 建议通过环境变量设置 API KEY，或者直接填入下方字符串
-API_KEY = "AIzaSyAiAxpOR1YWWpy3yvSzXVGWtgJxpWbb8rc" 
+API_KEY = os.getenv("GEMINI_API_KEY")
 MODEL_NAME = "models/gemini-3.1-flash-lite-preview" # 响应快，适合终端对话
 
 def main():

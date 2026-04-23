@@ -3,7 +3,7 @@ import os
 
 # 确保代理生效
 os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:7890'
-genai.configure(api_key="AIzaSyAiAxpOR1YWWpy3yvSzXVGWtgJxpWbb8rc")
+genai.configure(api_key="AIzaSyCC-aOd0YuiZHSEw-Fq1Tq2QUeIio-LSSk")
 
 print("--- 正在拉取你的可用模型清单 ---")
 try:
